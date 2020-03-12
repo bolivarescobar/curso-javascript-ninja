@@ -1,32 +1,33 @@
-# Desafio da semana #2
-
-Nesse exercício, você está livre para escolher os nomes para suas variáveis e funções! :smile:
-
 ```js
 // Crie uma função que receba dois argumentos e retorne a soma dos mesmos.
-teste
+function soma(x, y) {
+    return x + y;
+}
 
 // Declare uma variável que receba a invocação da função criada acima, passando dois números quaisquer por argumento, e somando `5` ao resultado retornado da função.
-?
+var resultado = soma(2, 5) + 5;
 
 // Qual o valor atualizado dessa variável?
-?
+12
 
 // Declare uma nova variável, sem valor.
-?
+var jojoca = undefinded;
 
 /*
 Crie uma função que adicione um valor à variável criada acima, e retorne a string:
     O valor da variável agora é VALOR.
 Onde VALOR é o novo valor da variável.
 */
-?
+function renew() {
+    jojoca = 10;
+    return "O valor da variável agora é 10";
+}
 
 // Invoque a função criada acima.
-?
+renew();
 
 // Qual o retorno da função? (Use comentários de bloco).
-?
+/* "O valor da variável agora é 10" */
 
 /*
 Crie uma função com as seguintes características:
