@@ -36,19 +36,25 @@ Crie uma função com as seguintes características:
     Preencha todos os valores corretamente!
 3. O retorno da função deve ser a multiplicação dos 3 argumentos, somando `2` ao resultado da multiplicação.
 */
-?
+function fill(a, b, c) {
+    if( a == null || b == null || c == null) {
+        return "Preencha todos os valores corretamente!";
+        } else {
+            return a * b * c + 2;
+        }
+}
 
 // Invoque a função criada acima, passando só dois números como argumento.
-?
+fill(3, 4);
 
 // Qual o resultado da invocação acima? (Use comentários para mostrar o valor retornado).
-?
+/* Preencha todos os valores corretamente! */
 
 // Agora invoque novamente a função criada acima, mas passando todos os três argumentos necessários.
-?
+fill(3, 5, 2);
 
 // Qual o resultado da invocação acima? (Use comentários para mostrar o valor retornado).
-?
+/* 32 */
 
 /*
 Crie uma função com as seguintes características:
@@ -59,8 +65,33 @@ Crie uma função com as seguintes características:
 5. Se nenhum argumento for passado, retorne o valor booleano `false`.
 6. E ainda, se nenhuma das condições acima forem atendidas, retorne `null`.
 */
-?
+function jojoca(a, b, c) {
+    if(a != null && b == null && c == null) {
+        return a;
+    } else {
+        if(a != null && b != null && c == null) {
+            return a + b;
+        } else {
+            if(a != null && b != null && c != null) {
+                return (a + b) / c;
+            } else {
+                if(a == null && b == null && c == null) {
+                    return false;
+                } else {
+                    return null;
+                }
+            }
+        }
+    }
+}
 
 // Invoque a função acima utilizando todas as possibilidades (com nenhum argumento, com um, com dois e com três.) Coloque um comentário de linha ao lado da função com o resultado de cada invocação.
-?
+jojoca(2); // 2
+
+jojoca(2, 3); // 5
+
+jojoca(4, 4, 2); // 4
+
+jojoca(); // false
+
 ```
