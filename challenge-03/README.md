@@ -24,7 +24,7 @@ var pessoa = {
     peso: 70,
     andando: false,
     caminhouQuantosMetros: 0,
-}
+};
 
     /*
     Adicione um método ao objeto `pessoa` chamado `fazerAniversario`. O método deve
@@ -46,9 +46,9 @@ pessoa.fazerAniversario = function() {pessoa.idade++};
     */
 
 pessoa.andar = function(x) {
-    pessoa.caminhouQuantosMetros = x++;
+    pessoa.caminhouQuantosMetros += x;
     pessoa.andando = true;
-}
+};
 
     /*
     Adicione um método ao objeto `pessoa` chamado `parar`, que irá modificar o valor
@@ -57,7 +57,7 @@ pessoa.andar = function(x) {
 
 pessoa.parar = function() {
     pessoa.andando = false;
-}
+};
 
     /*
     Crie um método chamado `nomeCompleto`, que retorne a frase:
@@ -196,20 +196,32 @@ pessoa.caminhouQuantosMetros; // 16;
 
 pessoa.apresentacao = function() {
 
-    let pessoa.a = "Olá, eu sou a ";
+    var sexo = "o";
 
-    let pessoa.b = ", tenho" + " " + pessoa.idade + "ano,";
+    var idadeAnos = "anos";
 
-    let pessoa.c = " e, só hoje, eu já caminhei" + " " + pessoa.caminhouQuantosMetros + " metro!"
+    var distancia = "metros";
 
-    if( pessoa.sexo === F && pessoa.idade === 1 && pessoa.caminhouQuantosMetros === 1) {
-        return pessoa.nomeF + pessoa.nome + " " + pessoa.sobrenome + pessoa.idade1 + pessoa.altura + "m, " + "meu peso é " + pessoa.peso + pessoa.caminhouQuantosMetros1;
-    } else if( pessoa.sexo === M && pessoa.idade === 1 && pessoa.caminhouQuantosMetros === 1) {
-        return "Olá, eu sou o "+ pessoa.nome + " " + pessoa.sobrenome + pessoa.idade1 + pessoa.altura + "m, " + "meu peso é " + pessoa.peso + pessoa.caminhouQuantosMetros1; 
-    } else if
-    
-}
+    if(pessoa.sexo === "F") {
+        sexo = "a";
+    } 
+
+    if(pessoa.idade === 1) {
+        idadeAnos = "ano";
+    }
+
+    if(pessoa.caminhouQuantosMetros === 1) {
+        distancia = "metro";
+    }
+
+    return "Olá, eu sou " + sexo + " " + pessoa.nomeCompleto + ", tenho " + pessoa.idade + " " + idadeAnos + ", " + pessoa.altura + "m, meu peso é " + pessoa.peso + " e, só hoje, eu já caminhei " + pessoa.caminhouQuantosMetros + " " + distancia + "!";
+
+    };
+
+   
 
 // Agora, apresente-se ;)
-?
+
+pessoa.apresentacao();
+
 ```
