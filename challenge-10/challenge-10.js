@@ -177,6 +177,8 @@
         number1 = 10;
         number2 = 12;
         console.log( showOperationMessage(operationSignal, number1, number2), sum(number1, number2) );
+    } else {
+        console.log( showErrorMessage( operationSignal ) );
     };
 
     /*
@@ -193,6 +195,8 @@
     number1 = 50;
     number2 = 25;
     console.log( showOperationMessage(operationSignal, number1, number2), subtraction(number1, number2) );
+    } else {
+        console.log( showErrorMessage( operationSignal ) );
     };
 
     var operationSignal = '*';
@@ -203,7 +207,9 @@
      number1 = 80;
      number2 = 1870;
      console.log( showOperationMessage(operationSignal, number1, number2), multiplication(number1, number2) );
-     };
+     } else {
+        console.log( showErrorMessage( operationSignal ) );
+    };
      
     var operationSignal = '/';
 
@@ -213,6 +219,8 @@
     number1 = 40;
     number2 = 4;
     console.log( showOperationMessage(operationSignal, number1, number2), division(number1, number2) );
+    } else {
+        console.log( showErrorMessage( operationSignal ) );
     };
 
     var operationSignal = '%';
@@ -223,7 +231,9 @@
      number1 = 7;
      number2 = 3;
      console.log( showOperationMessage(operationSignal, number1, number2), mod(number1, number2) );
-     };
+     } else {
+        console.log( showErrorMessage( operationSignal ) );
+    };
 
     /*
     Repita o PASSO 2 novamente, mas passando um operador inválido, para ver se
@@ -238,6 +248,9 @@
     number1 = 50;
     number2 = 25;
     console.log( showOperationMessage(operationSignal, number1, number2), subtraction(number1, number2) );
+    }
+    else {
+        console.log( showErrorMessage( operationSignal ) );
     };
 
 })();
