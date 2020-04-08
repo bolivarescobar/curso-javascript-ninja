@@ -39,11 +39,11 @@ Após o loop, mostre a frase:
 'The person has [COUNTER] properties'
 */
 
+var counter;
+
 for (var prop in person) {
     console.log ("The " + prop + " of person is " + person[prop] );
 };
-
-var counter;
 
 for ( counter = 0; counter < person[prop].length / 2; counter++) {
     if ( counter < 4 ) {
@@ -60,11 +60,15 @@ Após a função, mostrar a mensagem no console:
 'The person has more than 25 years old? [TRUE/FALSE]'
 */
 
-function moreThan( age ) {
+/* function moreThan( age ) {
     if (person.age > age) {
         return true;
     };
     return false;    
+} */
+
+function moreThan (age) {
+    return person.age > age;
 }
 
 console.log( 'The person has more than 25 years old?',  moreThan(25) );
@@ -75,20 +79,61 @@ array chamado `numbers`. Se o contador for maior que 10, saia do loop.
 Mostre no console os números no array.
 */
 
-var numbers = [0]
+var numbers = [];
 
-while ()
+/* var loop = 0;
+
+while ( loop <= 20 ) {
+    numbers.push(loop);
+    loop++;
+    if ( loop === 10 ) {
+        break;
+    }
+}; */
+
+for( var i = 0; i < 20; i++ ) {
+    if ( i > 10 ) {
+        break;
+    }
+    numbers.push( i );
+}
 
 console.log( 'De 0 a 10:' );
 
 console.log( numbers );
+
 /*
 Faça outro loop de 0 a 20, que adicione a um array chamado `numbers` (já
 criado acima, só precisa ser reiniciado) números de 0 a 20, inclusive
 esses. Se o número for ímpar, pular para o próximo número.
 Mostrar no console os números do array.
 */
+
+var numbers = [];
+
+var loop = 0;
+
+while ( loop <= 20 ) {
+    loop++;
+    if ( loop % 2 !== 0 ) {
+        continue;
+    }
+    numbers.push(loop);
+};
+
 console.log( 'Pares de 0 a 20:' );
-// ?
+
+console.log( numbers );
+
+var numbers = [];
+
+for ( var i = 0; i <= 20; i++ ) {
+    if ( i % 2 !== 0 ) {
+        continue;
+    }
+    numbers.push( i );
+};
+
+console.log( numbers );
 
 })();
