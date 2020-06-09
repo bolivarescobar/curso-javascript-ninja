@@ -1,3 +1,7 @@
+
+(function () {
+
+
 /*
 Envolva todo o código desse desafio em uma IIFE.
 */
@@ -95,3 +99,5 @@ formato de String.
 */
 console.log( '\njustMod2Or3 é um array? Se for, a representação dele em String é:' );
 // ?
+
+});
